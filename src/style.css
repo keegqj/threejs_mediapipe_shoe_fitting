@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+  
+canvas {
+  display: block;
+}
+
+.titleContainer {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 20px;
+}
+
+#titleImage {
+  width: 80%;
+  height: 5vh;
+}
+
+.modelContainer {
+  position:absolute;  
+  overflow-x: scroll;
+  width: 100vw;
+  height: 10vh;
+  bottom: 50px;
+}
+
+.scrollDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  width: 180vw;
+}
+
+.imageItem {
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin: 0 20px;
+  width: 17vw;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.imageItem:nth-child(1) {
+  background-image: url('../image/1.jpg');
+}
+.imageItem:nth-child(2) {
+  background-image: url('../image/2.jpg');
+}
+.imageItem:nth-child(3) {
+  background-image: url('../image/3.jpg');
+}
+.imageItem:nth-child(4) {
+  background-image: url('../image/4.jpg');
+}
+.imageItem:nth-child(5) {
+  background-image: url('../image/5.jpg');
+}
+.imageItem:nth-child(6) {
+  background-image: url('../image/6.jpg');
+}
+
+#loadingContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+}
+
+#loadingGif {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#loadingText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  text-align: center;
+}

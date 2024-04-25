@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.12",
+    "three": "^0.162.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}
